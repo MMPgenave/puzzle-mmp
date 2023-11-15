@@ -1,0 +1,33 @@
+.main-container {
+  /* border: #8c37e8 solid; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+  margin-top: 4rem;
+}
+
+.container {
+  width: 10rem;
+  height: 10rem;
+  border: black solid 1px;
+}
+.items {
+  display: flex;
+  align-items: center;
+}
+.item1 {
+  width: 10rem;
+  background-color: #8c37e8;
+  height: 3rem;
+  margin-bottom: 1rem;
+  rotate: 90deg;
+  cursor: move;
+}
+
+.item2 {
+  width: 10rem;
+  height: 7rem;
+  background-color: rgb(55, 3, 3);
+  cursor: move;
+}

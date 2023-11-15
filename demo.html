@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <link
+      rel="stylesheet"
+      href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css"
+    />
+    <script src="http://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+
+    <script src="jquery.ui.rotatable.js"></script>
+    <link rel="stylesheet" href="jquery.ui.rotatable.css" />
+    <link rel="stylesheet" href="./index.css" />
+    <script type="text/javascript">
+      $(document).ready(function () {
+        $("#target1").draggable({
+          snap: true,
+          snapTolerance: 20,
+          degrees: 45,
+          handleOffset: {left: 200}
+        });
+        $("#target1").rotatable();
+        $("#target2").draggable({
+          snap: true,
+          snapTolerance: 20,
+        });
+
+        $("#target2").rotatable();
+      });
+    </script>
+  </head>
+  <body>
+    <div class="main-container">
+      <div class="items">
+        <div class="item1" id="target1"></div>
+        <div class="item2" id="target2"></div>
+      </div>
+      <div class="container" id="box"></div>
+    </div>
+  </body>
+</html>
