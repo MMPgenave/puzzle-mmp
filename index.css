@@ -1,3 +1,6 @@
+*{
+  box-sizing: border-box;
+}
 .main-container {
   /* border: #8c37e8 solid; */
   display: flex;

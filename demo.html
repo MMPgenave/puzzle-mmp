@@ -22,16 +22,20 @@
         $("#target1").draggable({
           snap: true,
           snapTolerance: 20,
-          degrees: 45,
-          handleOffset: {left: 200}
         });
-        $("#target1").rotatable();
+        $("#target1").rotatable({
+          snap: true,
+          handleOffset: { left: 8, top: 8 },
+        });
         $("#target2").draggable({
           snap: true,
           snapTolerance: 20,
         });
 
-        $("#target2").rotatable();
+        $("#target2").rotatable({
+          snap: true,
+          handleOffset: { left: 8, top: 8 },
+        });
       });
     </script>
   </head>
